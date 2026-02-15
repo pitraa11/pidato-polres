@@ -20,17 +20,17 @@
                 <div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
                 <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
             </div>
-            
+
             <div class="text-center relative z-10 max-w-lg">
                 <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
-                    <img src="{{ asset('daipolres.webp') }}" alt="Logo Polres Langsa" 
+                    <img src="{{ asset('daipolres.webp') }}" alt="Logo Polres Langsa"
                          class="w-48 h-48 xl:w-56 xl:h-56 mx-auto mb-6 drop-shadow-2xl hover:scale-105 transition-transform duration-300">
                     <h1 class="text-2xl xl:text-3xl font-extrabold mb-4 leading-tight text-gray-800 drop-shadow-lg">
-                        DUTA PELAJAR KAMTIBMAS <br> DAN DA'I POLRI
+                        DUTA PELAJAR KHAMTIBMAS <br> DAN DA'I POLRI
                     </h1>
                     <div class="w-20 h-1 bg-gray-800 mx-auto mb-4 rounded-full"></div>
                     <p class="text-sm xl:text-base font-semibold text-gray-700 drop-shadow-md leading-relaxed">
-                        Tingkat Pelajar SMP/Sederajat, SMA/Sederajat, dan Bhabinkamtibmas <br>
+                        Tingkat Pelajar SMP/Sederajat, SMA/Sederajat, dan Bhabinkhamtibmas <br>
                         Polsek Wilkum Polres Langsa
                     </p>
                 </div>
@@ -43,10 +43,10 @@
 
                 <!-- Mobile Branding - Enhanced -->
                 <div class="lg:hidden text-center mb-8 p-6 sm:p-8 bg-gradient-to-br from-primary via-orange-400 to-yellow-300 rounded-2xl shadow-xl">
-                    <img src="{{ asset('daipolres.webp') }}" alt="Logo Polres Langsa" 
+                    <img src="{{ asset('daipolres.webp') }}" alt="Logo Polres Langsa"
                          class="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-4 drop-shadow-2xl">
                     <h1 class="text-xl sm:text-2xl font-extrabold mb-2 leading-snug text-gray-800 drop-shadow-lg">
-                        DUTA PELAJAR KAMTIBMAS <br> DAN DA'I POLRI
+                        DUTA PELAJAR KHAMTIBMAS <br> DAN DA'I POLRI
                     </h1>
                     <p class="text-xs sm:text-sm font-medium text-gray-700 mt-2">
                         Polres Langsa
@@ -88,7 +88,7 @@
                                 <span class="absolute inset-y-0 left-0 flex items-center pl-4">
                                     <i data-lucide="user-round" class="w-5 h-5 text-gray-400"></i>
                                 </span>
-                                <input id="login" name="login" type="text" value="{{ old('login') }}" 
+                                <input id="login" name="login" type="text" value="{{ old('login') }}"
                                        required autofocus
                                        placeholder="Masukkan nomor registrasi atau NISN"
                                        class="block w-full pl-12 pr-4 py-3 sm:py-3.5 border border-gray-300 rounded-xl shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-sm sm:text-base">
@@ -149,7 +149,7 @@
                 <div class="mt-6 text-center">
                     <p class="text-sm sm:text-base text-gray-600">
                         Belum punya akun?
-                        <a href="{{ route('register') }}" 
+                        <a href="{{ route('register') }}"
                            class="font-semibold text-primary hover:text-orange-500 transition-colors duration-200 underline-offset-4 hover:underline">
                             Daftar di sini
                         </a>

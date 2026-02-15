@@ -39,8 +39,14 @@ class RegisteredUserController extends Controller
         // Generate Nomor Registrasi
         $year = date('Y');
         $lastUser = User::whereYear('created_at', $year)->orderBy('id', 'desc')->first();
-        $lastNumber = $lastUser ? intval(substr($lastUser->nomor_registrasi, -5)) : 0;
-        $newNumber = str_pad($lastNumber + 1, 5, '0', STR_PAD_LEFT);
+
+        $lastNumber = 0;
+        if ($lastUser) {
+            $parts = explode('-', $lastUser->nomor_registrasi);
+            $lastNumber = intval(end($parts));
+        }
+
+        $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
         $nomorRegistrasi = $year . '-' . $newNumber;
 
         $user = User::create([
